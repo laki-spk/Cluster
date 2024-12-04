@@ -1,0 +1,4 @@
+#To log in to the cluster
+srun -A cbp -p cbp-compute --mem=40G --pty /bin/bash #Cardiology node
+srun -A pcbg -p pcbg-compute -c 40 --mem=150G --pty bash #computing node
+srun -A pcbg -p pcbg-compute --qos=pcbg -c 40 --mem=150G --pty bash #computing node
